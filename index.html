@@ -1,0 +1,212 @@
+
+<!DOCTYPE HTML>
+	<head>
+        <link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<title>Entrée | Coming Soon </title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="top-header">
+		<!----start-wrap---->
+		<div class="wrap">
+			<!----start-header---->
+			<div class="header">
+				<!----start-logo---->
+				<div class="logo">
+					<a href="#"><img src="images/entreelogo.png" title="logo" /></a>
+				</div>
+				<!----End-logo---->
+				<!----start-top-links---->
+				<div class="top-links">
+									<!---start-notifie----->
+							<div class="notify" class="main clearfix column">
+					<form>
+						<input  class="md-trigger md-setperspective login" data-modal="top-scorll" type="button" value="Register">
+						<input  class="md-trigger md-setperspective regester" data-modal="top-scorll1" type="button" value="Login">
+					</form>
+					<div class="md-modal md-effect-19" id="top-scorll">
+						<div class="md-content">
+							<h3>Register</h3>
+							<div>
+								<p>Register to start using Entree with your business.</p>
+                                <h4>Name</h4>
+								<input type="text">
+								<h4>Email</h4>
+								<input type="text">
+								<h4>Restaurant/Business</h4>
+ <input type="text">
+								<h4>Password</h4>                                           <input type="password">
+								<h4>Re-Enter Password</h4>                                           <input type="password">
+                                <input type="submit" value="Coming Soon" />
+								<button class="md-close"> </button> 
+							</div>
+						</div>
+					</div>
+					<div class="md-modal md-effect-19" id="top-scorll1">
+						<div class="md-content">
+							<h3>Login</h3>
+							<div>
+								<p>Access reports, analytics, labor management, and more.</p>
+								<h4>Username</h4>
+								<input type="text">
+								<h4>Password</h4> 
+                                <input type="password"     name="password">
+								<input type="submit" value="Coming Soon" />
+								<button class="md-close"> </button> 
+								<span>Forget password ? <a href="#">Click here.</a></span>
+							</div>
+						</div>
+					</div>
+					<script src="js/classie.js"></script>
+					<script src="js/modalEffects.js"></script>
+					<script>
+						// this is important for IEs
+						var polyfilter_scriptpath = '/js/';
+					</script>
+				</div>
+				<!---End-notifie----->
+				</div>
+				<div class="clear"> </div>
+				<!----End-top-links---->
+			</div>
+			<!----End-header---->
+			<!---start-continer-slider---->
+			<div class="container demo-1">
+			<!-- a low-tech hack for pre-loading the images -->
+			<div class="preload" style="overflow: hidden; width: 0 px; height: 0px">
+				<img src="images/iPadtest.png" />
+				<img src="images/ipadscreen.png" />
+				<img src="images/macbook.png" />
+				<img src="images/iPadtest.png" />
+				<img src="images/iPhonetest.png" />
+				<img src="images/iPhonetest.png" />
+			</div>
+			<!-- Top Navigation -->
+			<div class="main clearfix">
+				<div class="md-slider">
+					<div class="md-device-wrapper">
+						<div class="md-device md-device-3">
+							<a href="#"><img src="images/iPadtest.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="js/morphingdevice.js"></script>
+		<script>
+			var el = document.querySelector( '.md-slider' ),
+				settings = {
+					autoplay : true,
+					interval : 3000,
+					devices : [ 
+						{ cName : 'md-device-3', canRotate : false, imgsrc : 'images/iPadtest.png' },
+						{ cName : 'md-device-4', canRotate : false, imgsrc : 'images/iPhonetest.png' },
+						{ cName : 'md-device-2', canRotate : false, imgsrc : 'images/ipadscreen.png' },
+						{ cName : 'md-device-1', canRotate : false, imgsrc : 'images/macbook.png' },
+					]
+				},
+				devicesTotal = settings.devices.length,
+				ds = MorphingDevice( el, settings );
+
+			// create navigation triggers
+			var nav = document.createElement( 'nav' );
+			for( var i = 0; i < devicesTotal; ++i ) {
+
+				var trigger = document.createElement( 'a' );
+				trigger.className = i === 0 ? 'md-current' : '';
+				trigger.setAttribute( 'href', '#' );
+				trigger.setAttribute( 'pos', i );
+				trigger.onclick = function( event ) {
+
+					ds.stopSlideshow();
+					var pos = Number( event.target.getAttribute( 'pos' ) );
+					if( pos === ds.getCurrent() ) {
+						return false;
+					}
+					ds.updateCurrentTrigger( event.target );
+					ds.setCurrent( pos );
+					ds.changeDevice();
+					return false;
+
+				};
+				nav.appendChild( trigger );
+
+			}
+			el.appendChild( nav );
+
+			if( settings.autoplay ) {
+				ds.startSlideshow();
+			}
+		</script>
+			<!---End-continer-slider---->
+		</div>
+		<!----End-wrap---->
+		</div>
+		<!---start-content---->
+		<div class="content">
+				<div class="app-dwonloding">
+					<div class="wrap">
+					<h3>Your Restaurant: In Real Time</h3>
+					<p>Entree is point-of-sale reinvented. Intuitive design and enhanced analytics help you run your restaurant faster and smarter. Real-Time updates mean your table maps recieve information from all around the restaurant, constantly changing based on order status and checkout times. Whether you need Terminals, mobile ordering, or mobile checkout, Entree can do it all.   </p>
+					<ul>
+					</ul>
+				</div>
+				</div>
+				<div class="clear"> </div>
+			<div class="topgrids">
+				<div class="wrap">
+				<div class="grids">
+					<div class="grid">
+						<a class="icon" href="#"> </a>
+						<p>Real-Time Table Maps and Waitlists. </p>
+					</div>
+					<div class="grid">
+						<a class="icon1" href="#"> </a>
+						<p>Intuitive Ordering and Checkout</p>
+					</div>
+					<div class="grid">
+						<a class="icon2" href="#"> </a>
+						<p>Use Tablets or Tickets in your Kitchen</p>
+					</div>
+                    <div class="grid">
+						<a class="icon3" href="#"> </a>
+						<p>Cloud Reporting and Analytics</p>
+					</div>
+                    <div class="grid">
+                    <a class="icon4" href="#"> </a>
+						<p>Customizable to fit your business</p>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			</div>
+				<a href="#"><img src="images/EntreeAppIconTwitter-02.png" alt=""></a>
+			</div>
+			<div class="buttom-app-dwonlodinglink">
+					<div class="wrap">
+					<h3>Coming Soon</h3>
+					<p>Follow us on Twitter to request features your business wants, hear about development, and know when we officially launch.</p>
+					<ul>
+						<li><a class="apple" href="#"> </a></li>
+						<li><a class="android" href="#"> </a></li>
+					</ul>
+				</div>
+                <a class="twitter-timeline" href="https://twitter.com/UseEntree" data-widget-id="550091555210420224">Tweets by @UseEntree</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</div>
+				<!---start-copy-right----->
+				<div class="copy-tight">
+					<p> <a href="http://w3layouts.com/"></a></p>
+				</div>
+				<!---End-copy-right----->
+		</div>
+		<!---End-content---->
+	</body>
+</html>
+<!--
+I do not claim ownership of this file and credit to w3layouts, MIT/BSD, CoDrops, and Joe Marini for kits and tools used in this website. 
+-->
